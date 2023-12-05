@@ -1,0 +1,43 @@
+/* Map.css */
+
+#map {
+    height: 50vh; /* Tinggi peta 50% dari tinggi viewport */
+    width: 50vw; /* Lebar peta 50% dari lebar viewport */
+    margin: 20px auto; /* Memberi jarak dari sisi body dan pusatkan horisontal */
+    border: 2px solid grey; /* Frame berwarna orange */
+    max-width: 800px; /* Batasi lebar maksimum peta */
+    margin-bottom: 0px; /* Jarak antara peta dan footer */
+  }
+  
+  .map-container {
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding-bottom: 60%; /* Mengatur aspek rasio untuk container agar peta responsif */
+  }
+  
+  .map-container #map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  body {
+    overflow: hidden;
+  }
+  footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  /* Map.css */
+
+/* Gaya marker lingkaran merah */
+.red-circle-icon {
+    background-color: red;
+    border-radius: 50%;
+    width: 12px; /* Sesuaikan dengan ukuran yang Anda tentukan di dalam definisi ikon */
+    height: 12px; /* Sesuaikan dengan ukuran yang Anda tentukan di dalam definisi ikon */
+  }
+  

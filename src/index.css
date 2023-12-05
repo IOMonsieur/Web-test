@@ -1,0 +1,97 @@
+/* index.css */
+
+/* Tailwind CSS Utilities */
+/* ... */
+
+/* Custom Styles */
+/* Logo (Kaleka) Styles */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Menggeser gambar ke kiri */
+}
+
+.logo img {
+  height: 3rem; /* Sesuaikan dengan tinggi yang diinginkan */
+  width: 8rem;
+  margin-right: 0.5rem;
+  margin-left: 2rem;
+  margin-top: 0; /* Menghilangkan margin atas */
+  margin-bottom: 0; /* Menghilangkan margin bawah */
+}
+
+header {
+  background-color: #000000; /* Warna latar belakang hitam */
+  padding: 1rem 0;
+  font-family: Arial, sans-serif; /* Mengatur jenis font */
+  height: 80px; /* Tinggi navbar, sesuaikan dengan kebutuhan Anda */
+}
+
+
+/* Navbar Item Styles */
+.navbar-items {
+  flex: 1; /* Menambahkan flex: 1 untuk Navbar Items */
+  display: flex;
+  justify-content: center; /* Untuk tetap menjaga item di tengah */
+  align-items: center;
+}
+
+/* Navbar Styles */
+header {
+  background-color: black; /* Warna latar belakang hitam */
+  font-family: Arial, sans-serif; /* Mengatur jenis font */
+}
+
+.navbar-items li {
+  color: #f9bf18
+  ; /* Warna teks oranye */
+  margin: 0 12px;
+  font-size: 16px; /* Ukuran font */
+  font-weight: bold; /* Ketebalan font */
+  text-transform: uppercase; /* Menjadikan teks huruf kapital */
+  margin-top: -3rem;
+}
+.image-outside-navbar img {
+  max-width: 100%; /* Menyesuaikan lebar maksimum dengan kontainer */
+}
+
+
+/* index.css */
+
+/* ... (Kode sebelumnya) */
+
+/* Navbar Responsiveness */
+@media screen and (max-width: 768px) {
+  .navbar-items {
+    display: none;
+    position: absolute;
+    top: 80px; /* Sesuaikan dengan tinggi navbar */
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: black; /* Warna latar belakang hitam */
+  }
+
+  .navbar-items.active {
+    display: flex;
+  }
+
+  .navbar-items li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu-icon .navicon {
+    background: #fff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 100%;
+  }
+}

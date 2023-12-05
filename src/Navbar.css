@@ -1,0 +1,48 @@
+/* Navbar.css */
+
+/* ... (CSS lainnya) */
+
+/* Hamburger Menu */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    margin-left: auto; /* Menempatkan ikon di sisi kanan */
+    margin-right: 2rem; /* Sesuaikan jarak dari logo */
+  }
+  
+  .menu-icon .navicon {
+    background: #f9bf18; /* Warna ikon sama dengan teks */
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 200px;
+  }
+  
+  /* ... (CSS lainnya) */
+  
+  /* Navbar Dropdown in Mobile Mode */
+  @media screen and (max-width: 768px) {
+    /* ... (CSS lainnya) */
+  
+    .menu-icon {
+      display: flex;
+      justify-content: center; /* Menempatkan ikon di tengah */
+      align-items: center; /* Mengatur posisi vertical ke center */
+      margin: 0 auto; /* Reset margin */
+      width: 100%; /* Mengisi lebar penuh */
+      position: absolute; /* Menggunakan posisi absolut */
+      bottom: 0; /* Menempatkan di bawah */
+    }
+  
+    .menu-icon .navicon {
+    height:10px;
+      width: 240px; /* Ubah lebar ikon menjadi ukuran yang diinginkan */
+    }
+  
+    /* Navbar Styles */
+    header {
+      position: relative; /* Menambahkan posisi relatif pada header */
+    }
+  }
+  
